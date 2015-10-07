@@ -5643,7 +5643,7 @@ function forum_print_discussion($course, $cm, $forum, $discussion, $post, $mode,
     }
 
     //load ratings
-    if ($forum->assessed != RATING_AGGREGATE_NONE) {
+    if ($forum->assessed != RATING_AGGREGATE_NONE and $canrate === true) {
         $ratingoptions = new stdClass;
         $ratingoptions->context = $modcontext;
         $ratingoptions->component = 'mod_forum';
