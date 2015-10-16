@@ -334,6 +334,9 @@ class block_course_overview_renderer extends plugin_renderer_base {
         $output .= $this->output->box_start('welcome_message');
         $output .= $this->output->heading(get_string('welcome', 'block_course_overview', $USER->firstname));
 
+        /*
+        nueva cambio de moodle
+        */
         $plural = 's';
         if ($msgcount > 0) {
             $output .= get_string('youhavemessages', 'block_course_overview', $msgcount);
